@@ -88,7 +88,7 @@ Comprehensive tests have been created for all API functions. See [docs/TESTING.m
 }
 ```
 
-## Configuration (docker)
+## Configuration (docker) (🚧 WIP)
 
 ```json
 {

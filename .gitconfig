@@ -1,0 +1,14 @@
+[user]
+    email = louiscklaw@123.com
+    name = louiscklaw
+[credential]
+    autoDetectTimeout = -1
+    helper = cache --timeout=2592000
+[http]
+    version = HTTP/1.1
+    postBuffer = 5368709120
+[lfs]
+    allowincompletepush = true
+    locksverify = true
+[init]
+    defaultBranch = master
