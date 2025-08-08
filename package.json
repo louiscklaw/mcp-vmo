@@ -1,0 +1,52 @@
+{
+    "name": "mcp-vmo",
+    "version": "1.0.1",
+    "description": "Model Context Protocol server to get vegetable market data from Vegetable Marketing Organization (VMO)",
+    "type": "module",
+    "main": "dist/index.js",
+    "bin": {
+        "mcp-vmo": "dist/index.js"
+    },
+    "engines": {
+        "node": ">=18"
+    },
+    "scripts": {
+        "build": "tsc",
+        "dev": "tsx src/index.ts",
+        "inspect": "export DANGEROUSLY_OMIT_AUTH=true && npx fastmcp inspect src/index.ts",
+        "start": "npm run build && node dist/index.js",
+        "test": "tsx documentation/REQ0901菇菌類/test.ts",
+        "test:w": "pnpx nodemon --ext ts --exec \"pnpm run test\"",
+        "test1": "mocha",
+        "format": "prettier --write src",
+        "test1:watch": "mocha --watch",
+        "clean": "rm -rf ./dist"
+    },
+    "keywords": [
+        "mcp",
+        "model-context-protocol",
+        "vmo",
+        "vegetable",
+        "marketing",
+        "produce",
+        "agriculture"
+    ],
+    "license": "MIT",
+    "dependencies": {
+        "@types/x-ray": "^2.3.6",
+        "fastmcp": "^1.21.0",
+        "prettier": "^3.6.2",
+        "x-ray": "^2.3.4",
+        "zod": "^3.24.2"
+    },
+    "devDependencies": {
+        "@types/chai": "^5.2.2",
+        "@types/mocha": "^10.0.10",
+        "@types/node": "^22.14.0",
+        "chai": "^5.2.1",
+        "mocha": "^11.7.1",
+        "ts-node": "^10.9.2",
+        "tsx": "^4.19.3",
+        "typescript": "^5.8.3"
+    }
+}
